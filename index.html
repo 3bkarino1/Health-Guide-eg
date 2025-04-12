@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-heartbeat"></i>
+                <h1>Health Guide</h1>
+            </div>
+            <!-- Mobile menu button is now handled by JavaScript -->
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="pages/diseases.html">Diseases</a></li>
+                <li><a href="pages/treatments.html">Treatments</a></li>
+                <li><a href="pages/prevention.html">Prevention</a></li>
+                <li><a href="pages/about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="صحة القلب والأوعية الدموية">
+                <h1>فهم الصحة في مصر</h1>
+                <p>معلومات شاملة عن الأمراض الشائعة وعلاجاتها</p>
+            </div>
+        </section>
+
+        <section id="diseases" class="diseases-section">
+            <h2>الأمراض الشائعة في مصر</h2>
+            <div class="disease-cards">
+                <div class="card">
+                    <i class="fas fa-heartbeat"></i>
+                    <h3>أمراض القلب والأوعية الدموية</h3>
+                    <p>أمراض القلب والسكتة الدماغية من الأسباب الرئيسية للوفاة في مصر.</p>
+                    <a href="#treatments" class="learn-more">معرفة المزيد</a>
+                </div>
+                <div class="card">
+                    <i class="fas fa-lungs"></i>
+                    <h3>أمراض الجهاز التنفسي</h3>
+                    <p>بما في ذلك الربو، ومرض الانسداد الرئوي المزمن، والالتهابات التنفسية.</p>
+                    <a href="#treatments" class="learn-more">معرفة المزيد</a>
+                </div>
+                <div class="card">
+                    <i class="fas fa-virus"></i>
+                    <h3>الأمراض المعدية</h3>
+                    <p>التهاب الكبد الوبائي C، والسل، وغيرها من الأمراض المعدية.</p>
+                    <a href="#treatments" class="learn-more">معرفة المزيد</a>
+                </div>
+                <div class="card">
+                    <i class="fas fa-diabetes"></i>
+                    <h3>مرض السكري</h3>
+                    <p>انتشار مرتفع لمرض السكري من النوع 2 في السكان المصريين.</p>
+                    <a href="#treatments" class="learn-more">معرفة المزيد</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="treatments" class="treatments-section">
+            <h2>طرق العلاج</h2>
+            <div class="treatment-info">
+                <div class="treatment-card">
+                    <h3>العلاج الطبي</h3>
+                    <ul>
+                        <li>الأدوية الموصوفة</li>
+                        <li>الفحوصات الدورية</li>
+                        <li>الرعاية المتخصصة</li>
+                    </ul>
+                </div>
+                <div class="treatment-card">
+                    <h3>تغييرات نمط الحياة</h3>
+                    <ul>
+                        <li>نظام غذائي صحي</li>
+                        <li>ممارسة الرياضة بانتظام</li>
+                        <li>إدارة التوتر</li>
+                    </ul>
+                </div>
+                <div class="treatment-card">
+                    <h3>التدابير الوقائية</h3>
+                    <ul>
+                        <li>التطعيم</li>
+                        <li>ممارسات النظافة</li>
+                        <li>الفحوصات الدورية</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="prevention" class="prevention-section">
+            <h2>نصائح للوقاية</h2>
+            <div class="prevention-grid">
+                <div class="prevention-item">
+                    <i class="fas fa-hand-washing"></i>
+                    <h3>النظافة</h3>
+                    <p>غسل اليدين بانتظام وممارسات النظافة الشخصية</p>
+                </div>
+                <div class="prevention-item">
+                    <i class="fas fa-utensils"></i>
+                    <h3>النظام الغذائي</h3>
+                    <p>تغذية متوازنة وعادات أكل صحية</p>
+                </div>
+                <div class="prevention-item">
+                    <i class="fas fa-running"></i>
+                    <h3>التمارين الرياضية</h3>
+                    <p>النشاط البدني المنتظم واللياقة البدنية</p>
+                </div>
+                <div class="prevention-item">
+                    <i class="fas fa-bed"></i>
+                    <h3>الراحة</h3>
+                    <p>النوم الكافي وإدارة التوتر</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Add contact form section -->
+        <section id="contact" class="contact-section">
+            <h2>تواصل معنا</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="user_name">الاسم</label>
+                    <input type="text" id="user_name" name="user_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="user_email">البريد الإلكتروني</label>
+                    <input type="email" id="user_email" name="user_email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">الرسالة</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">إرسال</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
