@@ -22,6 +22,8 @@ body {
     padding: 20px;
 }
 
+
+/* Header and Navigation */
 header {
     background-color: #f4f5ff;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
@@ -56,7 +58,7 @@ nav {
 
 .logo i {
     font-size: 2rem;
-    color: #3498db;
+    color: var(--primary-color);
     transition: transform 0.3s ease;
 }
 
@@ -65,7 +67,7 @@ nav {
 }
 
 .logo h1 {
-    color: #2c3e50;
+    color: var(--secondary-color);
     font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: -0.5px;
@@ -73,7 +75,7 @@ nav {
 }
 
 .logo:hover h1 {
-    color: #3498db;
+    color: var(--primary-color);
 }
 
 .nav-links {
@@ -89,9 +91,9 @@ nav {
 }
 
 .nav-links li a {
-    color: #2c3e50;
+    color: var(--secondary-color);
     text-decoration: none;
-    font-weight: 1400;
+    font-weight: 500;
     font-size: 1rem;
     padding: 0.5rem 1rem;
     transition: all 0.3s ease;
@@ -105,13 +107,13 @@ nav {
     left: 50%;
     width: 0;
     height: 2px;
-    background: #3498db;
+    background: var(--primary-color);
     transition: all 0.3s ease;
     transform: translateX(-50%);
 }
 
 .nav-links li a:hover {
-    color: #3498db;
+    color: var(--primary-color);
 }
 
 .nav-links li a:hover::after {
@@ -119,13 +121,13 @@ nav {
 }
 
 .nav-links li a.active {
-    color: #3498db;
+    color: var(--primary-color);
     font-weight: 600;
 }
 
 .nav-links li a.active::after {
     width: 80%;
-    background: #3498db;
+    background: var(--primary-color);
 }
 
 /* Mobile Menu Button */
@@ -133,7 +135,7 @@ nav {
     display: none;
     background: none;
     border: none;
-    color: #2c3e50;
+    color: var(--secondary-color);
     font-size: 1.5rem;
     cursor: pointer;
     padding: 0.5rem;
@@ -141,49 +143,8 @@ nav {
 }
 
 .mobile-menu-button:hover {
-    color: #3498db;
+    color: var(--primary-color);
 }
-
-/* Responsive Navigation */
-@media (max-width: 768px) {
-    .mobile-menu-button {
-        display: block;
-    }
-
-    .nav-links {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 80%;
-        height: 100vh;
-        background: #ffffff;
-        flex-direction: column;
-        padding: 5rem 2rem;
-        gap: 1.5rem;
-        transition: right 0.3s ease;
-        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
-    }
-
-    .nav-links.show {
-        right: 0;
-    }
-
-    .nav-links li a {
-        display: block;
-        padding: 0.8rem 0;
-        font-size: 1.1rem;
-    }
-
-    .nav-links li a::after {
-        display: none;
-    }
-
-    .nav-links li a.active {
-        color: #3498db;
-        font-weight: 600;
-    }
-}
-
 
 :root {
     --primary-color: #2563eb;
